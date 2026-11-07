@@ -1,0 +1,91 @@
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fade and slide animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.8s ease-out both;
+}
+
+.fade-up-delay-1 {
+  animation: fadeUp 0.8s ease-out 0.2s both;
+}
+
+.fade-up-delay-2 {
+  animation: fadeUp 0.8s ease-out 0.4s both;
+}
+
+/* Project card hover */
+.project-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-hover:hover {
+  transform: translateY(-5px);
+}
+
+/* Button hover */
+.button-hover {
+  transition: all 0.25s ease;
+}
+
+.button-hover:hover {
+  transform: translateY(-2px);
+}
+
+/* Modal animation */
+@keyframes modalFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalScale {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-overlay {
+  animation: modalFade 0.2s ease-out both;
+}
+
+.modal-panel {
+  animation: modalScale 0.25s ease-out both;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
