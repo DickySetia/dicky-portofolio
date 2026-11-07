@@ -1,6 +1,6 @@
 import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { ArrowUpRight, UserRound } from "lucide-react";
-import { SocialLinks } from "./socials";
+import { SocialLinks } from "./Socials";
 
 /* ------------------------------------------------------------------ */
 /*  PENGATURAN FISIKA — silakan diutak-atik sesuai selera              */

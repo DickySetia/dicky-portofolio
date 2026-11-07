@@ -1,5 +1,5 @@
 import { Mail, ArrowUpRight, MapPin, BriefcaseBusiness } from "lucide-react";
-import { SocialLinks } from "./socials";
+import { SocialLinks } from "./Socials";
 import Reveal from "./Reveal";
 
 function Contact() {
